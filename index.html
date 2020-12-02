@@ -7,7 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@1,100&display=swap" rel="stylesheet">
     <!-- JS, Popper.js, and jQuery -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -17,8 +18,8 @@
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 
@@ -182,6 +183,34 @@
             width: 80px;
             height: 45px;
         }
+
+        .About {
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            color: #ffffff;
+            padding-top: 40px;
+            font-size: 50px;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+        .about-content {
+            padding-top: 2%;
+            text-align: center;
+            color: white;
+            font-size: 22px;
+            font-family: 'Texturina', serif;
+        }
+
+        #particles-js {
+            width: 100%;
+            height: 100%;
+        }
+
+        section {
+            padding-top: 10%;
+            background-color: rgb(34, 33, 33);
+        }
     </style>
 
 </head>
@@ -248,7 +277,39 @@
             </button>
         </div>
     </div>
-    <h1>This is Arun Upreti</h1>
+    <section>
+        <div id="particles-js">
+            <div class="About">
+                ABOUT
+            </div>
+            <div class="about-content">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident veritatis dolorem, at
+                    vero
+                    placeat delectus<br> blanditiis totam quaerat molestiae accusantium iure fugit autem labore incidunt
+                    officia
+                    sed eum. Quod?</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident veritatis dolorem, at
+                    vero
+                    placeat delectus<br> blanditiis totam quaerat molestiae accusantium iure fugit autem labore incidunt
+                    officia
+                    sed eum. Quod?</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident veritatis dolorem, at
+                    vero
+                    placeat delectus<br> blanditiis totam quaerat molestiae accusantium iure fugit autem labore incidunt
+                    officia
+                    sed eum. Quod?</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident veritatis dolorem, at
+                    vero
+                    placeat delectus<br> blanditiis totam quaerat molestiae accusantium iure fugit autem labore incidunt
+                    officia
+                    sed eum. Quod?</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="particles.min.js"></script>
+    <script src="app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
