@@ -34,10 +34,10 @@
             height: 100%;
             margin: 0;
             padding: 0;
-
+            scroll-behavior: smooth;
         }
 
-        .banner-img {
+        #home {
             background-image: url("h-heyerlein-ndja2LJ4IcM-unsplash.jpg");
             background-size: cover;
             background-repeat: no-repeat;
@@ -116,7 +116,7 @@
             padding-top: 17px;
         }
 
-        .services {
+        .covid-stories {
             color: white;
 
             padding-top: 17px;
@@ -128,7 +128,7 @@
             padding-top: 17px;
         }
 
-        .contacts {
+        .dashboard {
             color: white;
 
             padding-top: 17px;
@@ -205,82 +205,83 @@
         #particles-js {
             width: 100%;
             height: 100%;
-        }
-
-        section {
-            padding-top: 10%;
-            background-color: rgb(34, 33, 33);
+            background: rgb(42, 42, 42);
         }
     </style>
 
 </head>
 
 <body>
-    <div class="banner-img">
-        <div class="nav">
-            <div class="menu">
-                <button id="btn-1">
-                    <img src="Icon ionic-ios-menu.svg">
+    <section id="home">
+        <div class="banner-img">
+            <div class="nav">
+                <div class="menu">
+                    <button id="btn-1">
+                        <img src="Icon ionic-ios-menu.svg">
+                    </button>
+                </div>
+                <div class="home">
+                    <a href="#home">
+                        <h5>HOME</h5>
+                    </a>
+                </div>
+                <div class="about">
+                    <a href="#about">
+                        <h5>ABOUT</h5>
+                    </a>
+                </div>
+                <div class="covid-stories">
+
+                    <a href="#">
+                        <h5>COVID-STORIES</h5>
+                    </a>
+                </div>
+                <div class="dashboard">
+                    <a href="#">
+                        <h5>DASHBOARD</h5>
+                    </a>
+                </div>
+                <div class="search-box">
+                    <form>
+                        <div class="text-box">
+                            <input type="text" placeholder="Search...">
+                            <button id="btn-2" type="submit">Search</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="write" data-aos="fade-right" data-aos-duration="1300">
+                <h1>THIS IS WHERE MACHINES<br>MEET INTELLIGENCE.</h1>
+
+            </div>
+
+            <div class="write2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                <h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Quidem eum a <br>esse mollitia ad
+                        perspiciatis
+                        culpa temporibus nesciunt.<br> Corrupti amet sequi minima voluptas nam unde<br> blanditiis quo
+                        doloremque
+                        deleniti quia!
+                    </p>
+                </h5>
+            </div>
+            <div class="read-more" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1000">
+                <button id="btn-3">
+                    <h4>READ MORE<h4>
                 </button>
             </div>
-            <div class="home">
-                <a href="#">
-                    <h5>HOME</h5>
-                </a>
-            </div>
-            <div class="services">
-                <a href="#">
-                    <h5>SERVICES</h5>
-                </a>
-            </div>
-            <div class="about">
-
-                <a href="#">
-                    <h5>ABOUT</h5>
-                </a>
-            </div>
-            <div class="contacts">
-                <a href="#">
-                    <h5>CONTACTS</h5>
-                </a>
-            </div>
-            <div class="search-box">
-                <form>
-                    <div class="text-box">
-                        <input type="text" placeholder="Search...">
-                        <button id="btn-2" type="submit">Search</button>
-                    </div>
-                </form>
-
-            </div>
-
         </div>
+    </section>
+    <script src="particles.min.js"></script>
+    <div id="particles-js">
+        <canvas class="particles-js-canvas-el" width="1898" height="538" style="width: 100%; height: 100%;"></canvas>
+        <div>
 
-        <div class="write" data-aos="fade-right" data-aos-duration="1300">
-            <h1>THIS IS WHERE MACHINES<br>MEET INTELLIGENCE.</h1>
-
-        </div>
-
-        <div class="write2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-            <h5>
-                <p>Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Quidem eum a <br>esse mollitia ad
-                    perspiciatis
-                    culpa temporibus nesciunt.<br> Corrupti amet sequi minima voluptas nam unde<br> blanditiis quo
-                    doloremque
-                    deleniti quia!
-                </p>
-            </h5>
-        </div>
-        <div class="read-more" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1000">
-            <button id="btn-3">
-                <h4>READ MORE<h4>
-            </button>
-        </div>
-    </div>
-    <section>
-        <div id="particles-js">
-            <div class="About">
-                ABOUT
+            <div class="About" id="about">
+                ABOUTdf
             </div>
             <div class="about-content">
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem provident veritatis dolorem, at
@@ -304,16 +305,14 @@
                     officia
                     sed eum. Quod?</p>
             </div>
-        </div>
-    </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="particles.min.js"></script>
-    <script src="app.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+            <script src="app.js"></script>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
 </body>
 <script src="index.js"></script>
 
